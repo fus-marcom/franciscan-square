@@ -22,7 +22,7 @@ $fus-gold: #998643;
 }
 
 body {
-  background-color: #e8e8e8;
+  background-color: #fff;
    display: flex;
    min-height: 100vh;
    flex-direction: column;
@@ -46,6 +46,18 @@ header {
 
 nav {
   height: 64px;
+  box-shadow: none;
+
+  .button-collapse i {
+    color: rgba(0,0,0,0.87);
+  }
+
+  .brand-logo {
+    img {
+      height: 64px;
+      margin: 16px;
+    }
+  }
   .page-title {
     line-height: 64px;
     font-size: 40px;
@@ -69,6 +81,10 @@ nav {
   .more-btn {
     cursor: pointer;
     margin-right: 8px;
+  }
+
+  ul li a {
+    color: rgba(0,0,0,0.87);
   }
 
   ul li a.logout:hover {
