@@ -24,8 +24,6 @@ body {
 main {
   flex: 1 0 auto;
   min-height: 100vh; }
-  main .container.w90 {
-    width: 90%; }
 
 header {
   height: 122px;
@@ -82,96 +80,6 @@ nav {
       line-height: 48px;
       float: left;
       margin-right: 8px; }
-  .side-nav li .input-field .select-wrapper input.select-dropdown {
-    color: rgba(0, 0, 0, 0.57); }
-  .side-nav li .input-field label {
-    top: 0.8rem;
-    left: 0.75rem;
-    font-size: 1rem;
-    display: none; }
-
-header, main, footer {
-  padding-left: 300px; }
-
-@media only screen and (max-width: 992px) {
-  header, main, footer {
-    padding-left: 0; } }
-
-.search-icon {
-  cursor: pointer;
-  padding-right: 16px; }
-
-.search-nav .nav-wrapper {
-  overflow: visible; }
-
-.search-nav .search-form {
-  height: 100%; }
-  .search-nav .search-form .material-icons {
-    color: #f5f5f5; }
-  .search-nav .search-form .row {
-    height: 100%;
-    padding: 0; }
-    .search-nav .search-form .row .select-wrapper + label {
-      position: absolute;
-      top: -14px;
-      font-size: 0.8rem; }
-    .search-nav .search-form .row .select-field {
-      width: calc(25% - 16px);
-      max-width: 175px;
-      margin-left: 8px; }
-  .search-nav .search-form .input-field {
-    padding: 0; }
-  .search-nav .search-form .input-field.search-field {
-    height: 100%; }
-    .search-nav .search-form .input-field.search-field input#search {
-      height: 100%;
-      font-size: 40px;
-      font-weight: 300; }
-      @media screen and (max-width: 993px) {
-        .search-nav .search-form .input-field.search-field input#search {
-          font-size: 25px; } }
-      .search-nav .search-form .input-field.search-field input#search:focus {
-        background-color: #21412a;
-        color: #fafafa; }
-  .search-nav .search-form .input-field input[type=search]:focus + label i {
-    color: #f5f5f5; }
-  .search-nav .search-form .close-search {
-    color: #f5f5f5;
-    position: absolute;
-    right: 16px;
-    cursor: pointer; }
-
-.search-nav .select-wrapper input.select-dropdown {
-  margin-top: 36px;
-  z-index: 2; }
-
-.search-nav .select-wrapper span.caret {
-  right: 8px;
-  top: -21px;
-  color: #fafafa; }
-
-.search-nav .dropdown-content {
-  top: 8px !important; }
-
-.mobile-search {
-  padding: 50px 0; }
-  .mobile-search .isotope-row {
-    margin-top: 50px; }
-
-.show-nav {
-  display: block;
-  visibility: visible; }
-
-.hide-nav {
-  display: none; }
-
-.container {
-  max-width: 5000px; }
-  .container .row.notMasonry {
-    max-width: 1000px;
-    margin: 0 auto; }
-  .container .load-more-row {
-    text-align: center; }
 
 .scroll-to-top {
   position: fixed;
@@ -199,6 +107,21 @@ header, main, footer {
   margin: 50px auto;
   display: block; }
 
+.hero-section {
+  background-image: url("../img/Franciscan-Square-Rendering.jpg");
+  background-size: cover;
+  height: 100vh; }
+  .hero-section .hero-overlay {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+    background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+    /* IE6-9 */ }
+
 .card .card-content .card-title {
   line-height: 30px;
   margin-bottom: 15px; }
@@ -218,14 +141,6 @@ header, main, footer {
   padding-left: 25px; }
   .card .card-content ul li {
     list-style-type: disc; }
-
-.card .cat-name {
-  color: #ffac0c;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 400; }
-  .card .cat-name:hover {
-    cursor: pointer; }
 
 .card .card-action .tag-link {
   margin-right: 4px !important;
@@ -256,16 +171,6 @@ header, main, footer {
     position: relative; }
     .card.horizontal .card-stacked .card-content {
       flex-grow: 1; }
-
-#post-modal .cat-name, #post-modal .tag-name {
-  color: #ffc658; }
-  #post-modal .cat-name:hover, #post-modal .tag-name:hover {
-    cursor: pointer; }
-
-#post-modal .tag-name {
-  color: #8e9fbc; }
-  #post-modal .tag-name:hover {
-    color: #ced5e2; }
 
 @media screen and (max-width: 992px) {
   .material-tooltip {

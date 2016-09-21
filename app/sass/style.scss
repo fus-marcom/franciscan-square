@@ -33,10 +33,6 @@ body {
  main {
    flex: 1 0 auto;
    min-height: 100vh;
-
-   .container.w90 {
-     width: 90%;
-   }
  }
 
 header {
@@ -58,6 +54,7 @@ nav {
       margin: 16px;
     }
   }
+
   .page-title {
     line-height: 64px;
     font-size: 40px;
@@ -128,151 +125,6 @@ nav {
         margin-right: 8px;
       }
     }
-
-    .input-field {
-
-      .select-wrapper {
-        input.select-dropdown {
-          color: rgba(0, 0, 0, 0.57);
-        }
-      }
-
-      label {
-        top: 0.8rem;
-        left: 0.75rem;
-        font-size: 1rem;
-        display: none;
-      }
-    }
-  }
-}
-
-// Offset for fixed side-nav
-header, main, footer {
-      padding-left: 300px;
-    }
-
-    @media only screen and (max-width : 992px) {
-      header, main, footer {
-        padding-left: 0;
-      }
-    }
-
-.search-icon {
-  cursor: pointer;
-  padding-right: 16px;
-}
-
-.search-nav {
-
-  .nav-wrapper {
-    overflow: visible;
-  }
-
-  .search-form {
-    height: 100%;
-
-    .material-icons {
-      color: #f5f5f5;
-    }
-
-    .row {
-      height: 100%;
-      padding: 0;
-
-      .select-wrapper + label {
-        position: absolute;
-        top: -14px;
-        font-size: 0.8rem;
-      }
-
-      .select-field {
-        width: calc(25% - 16px);
-        max-width: 175px;
-        margin-left: 8px;
-      }
-    }
-
-    .input-field {
-      padding: 0;
-    }
-
-    .input-field.search-field {
-      height: 100%;
-
-      input#search {
-        height: 100%;
-        font-size: 40px;
-        font-weight: 300;
-
-        @media screen and (max-width: 993px) {
-          font-size: 25px;
-        }
-
-        &:focus {
-          background-color: $fus-green;
-          color: #fafafa;
-        }
-      }
-    }
-
-    .input-field input[type=search]:focus + label i {
-      color: #f5f5f5;
-    }
-
-    .close-search {
-      color: #f5f5f5;
-      position: absolute;
-      right: 16px;
-      cursor: pointer;
-    }
-  }
-
-  .select-wrapper input.select-dropdown {
-    margin-top: 36px;
-    z-index: 2;
-  }
-
-  .select-wrapper span.caret {
-    right: 8px;
-    top: -21px;
-    color: #fafafa;
-  }
-
-
-  .dropdown-content {
-    top: 8px!important;
-  }
-}
-
-.mobile-search {
-  padding: 50px 0;
-
-  .isotope-row {
-    margin-top: 50px;
-  }
-}
-
-.show-nav {
-  display: block;
-  visibility: visible;
-}
-
-.hide-nav {
-  display: none;
-}
-
-
-.container {
-  max-width: 5000px;
-
-  .row.notMasonry {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .load-more-row {
-    text-align: center;
   }
 }
 
@@ -311,6 +163,21 @@ header, main, footer {
 }
 
 
+.hero-section {
+  background-image: url("../img/Franciscan-Square-Rendering.jpg");
+  background-size: cover;
+  height:100vh;
+
+  .hero-overlay {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+  }
+}
+
 .card {
   .card-content {
     .card-title {
@@ -345,16 +212,6 @@ header, main, footer {
       li {
         list-style-type: disc;
       }
-    }
-  }
-  .cat-name {
-    color: darken($fus-yellow, 15%);
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 400;
-
-    &:hover {
-      cursor: pointer;
     }
   }
 
@@ -408,23 +265,6 @@ header, main, footer {
     }
   }
 }
-}
-
-#post-modal {
-  .cat-name, .tag-name {
-    color: $fus-yellow;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  .tag-name {
-    color: $fus-light-blue;
-    &:hover {
-      color: lighten($fus-light-blue, 20%);
-    }
-  }
-
 }
 
 .material-tooltip {
