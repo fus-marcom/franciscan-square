@@ -107,10 +107,14 @@ nav {
   margin: 50px auto;
   display: block; }
 
+.flow-text {
+  color: rgba(0, 0, 0, 0.5); }
+
 .hero-section {
-  background-image: url("../img/Franciscan-Square-Rendering.jpg");
+  background-image: url("../img/town-square.jpg");
   background-size: cover;
-  height: 100vh; }
+  background-attachment: fixed;
+  height: calc(90vh - 64px); }
   .hero-section .hero-overlay {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
     background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
@@ -120,7 +124,21 @@ nav {
     background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
-    /* IE6-9 */ }
+    /* IE6-9 */
+    height: 39%; }
+  .hero-section h1 {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 50px 0; }
+
+.section {
+  min-height: 50vh; }
+  .section .col.valign {
+    padding: 0 50px; }
+  .section .btn {
+    background-color: #000; }
+    .section .btn:hover {
+      background-color: #fff;
+      color: #000; }
 
 .card .card-content .card-title {
   line-height: 30px;
