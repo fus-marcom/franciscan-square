@@ -187,19 +187,26 @@ nav {
   }
 }
 
+#hotel .hero-section {
+  height: calc(60vh - 64px);
+}
+
 .section {
   min-height: 50vh;
+  padding: 50px 0;
 
   .col.valign {
     padding: 0 50px;
   }
 
   .btn {
-    background-color: #000;
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #000;
 
     &:hover {
-      background-color: #fff;
-      color: #000;
+      background-color: #000;
+      color: #fff;
     }
   }
 }

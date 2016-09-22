@@ -130,15 +130,21 @@ nav {
     background-color: rgba(255, 255, 255, 0.75);
     padding: 50px 0; }
 
+#hotel .hero-section {
+  height: calc(60vh - 64px); }
+
 .section {
-  min-height: 50vh; }
+  min-height: 50vh;
+  padding: 50px 0; }
   .section .col.valign {
     padding: 0 50px; }
   .section .btn {
-    background-color: #000; }
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #000; }
     .section .btn:hover {
-      background-color: #fff;
-      color: #000; }
+      background-color: #000;
+      color: #fff; }
 
 .card .card-content .card-title {
   line-height: 30px;
