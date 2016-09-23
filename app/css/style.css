@@ -13,6 +13,10 @@
 .fus-gold {
   background-color: #998643; }
 
+.block-center {
+  display: block;
+  margin: 0 auto; }
+
 body {
   background-color: #fff;
   display: flex;
@@ -130,15 +134,6 @@ nav {
     background-color: rgba(255, 255, 255, 0.75);
     padding: 50px 0; }
 
-#hotel .hero-section {
-  height: calc(60vh - 64px); }
-
-#hotel .container {
-  max-width: 2000px; }
-  @media only screen and (min-width: 993px) {
-    #hotel .container {
-      width: 85%; } }
-
 .section {
   min-height: 50vh;
   padding: 50px 0; }
@@ -151,6 +146,34 @@ nav {
     .section .btn:hover {
       background-color: #000;
       color: #fff; }
+
+.section.banner {
+  min-height: 200px;
+  padding: 25px 0; }
+  .section.banner .btn {
+    background-color: transparent;
+    color: #fff;
+    border: solid 1px #fff;
+    font-size: 18px; }
+    .section.banner .btn:hover {
+      background-color: #fff;
+      color: #1f2a44; }
+
+#hotel .hero-section {
+  height: calc(60vh - 64px); }
+
+#hotel h5 {
+  font-weight: 300;
+  padding: 15px 0 50px 0; }
+
+#hotel .container {
+  max-width: 2000px; }
+  @media only screen and (min-width: 993px) {
+    #hotel .container {
+      width: 85%; } }
+
+#hotel ul li {
+  font-size: 16px; }
 
 .card .card-content .card-title {
   line-height: 30px;
