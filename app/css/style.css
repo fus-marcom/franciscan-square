@@ -133,6 +133,12 @@ nav {
 #hotel .hero-section {
   height: calc(60vh - 64px); }
 
+#hotel .container {
+  max-width: 2000px; }
+  @media only screen and (min-width: 993px) {
+    #hotel .container {
+      width: 85%; } }
+
 .section {
   min-height: 50vh;
   padding: 50px 0; }

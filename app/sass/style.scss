@@ -187,9 +187,21 @@ nav {
   }
 }
 
-#hotel .hero-section {
-  height: calc(60vh - 64px);
+#hotel {
+  .hero-section {
+    height: calc(60vh - 64px);
+  }
+
+  .container {
+    max-width: 2000px;
+
+    @media only screen and (min-width: 993px) {
+      width: 85%;
+    }
+  }
 }
+
+
 
 .section {
   min-height: 50vh;
