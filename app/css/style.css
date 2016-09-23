@@ -175,6 +175,58 @@ nav {
 #hotel ul li {
   font-size: 16px; }
 
+#about #directions {
+  padding: 0;
+  margin-bottom: -38px;
+  z-index: 0; }
+  #about #directions .row {
+    margin: 0; }
+    #about #directions .row .col {
+      padding: 0; }
+    #about #directions .row .directions-text-col {
+      padding: 50px; }
+  #about #directions i {
+    font-size: 39px;
+    vertical-align: text-top;
+    width: 39px;
+    height: 39px; }
+
+#about #custom-map {
+  height: 50vh;
+  width: 100%; }
+  @media screen and (max-height: 550px) {
+    #about #custom-map {
+      height: 85vh;
+      pointer-events: none; } }
+  @media screen and (max-width: 740px) {
+    #about #custom-map {
+      pointer-events: none; } }
+
+#about .gm-style-iw * {
+  display: block;
+  width: 100%; }
+
+#about .gm-style-iw h4, #about .gm-style-iw p {
+  margin: 0;
+  padding: 0; }
+
+#about .gm-style-iw a {
+  color: #4272db; }
+
+#about .marker-name {
+  font-size: 20px; }
+
+#about .gm-style-iw {
+  width: 300px;
+  max-width: 210px; }
+  #about .gm-style-iw span {
+    font-weight: 400; }
+  #about .gm-style-iw .marker-name {
+    font-weight: 300; }
+
+#about iframe {
+  min-height: 50vh; }
+
 .card .card-content .card-title {
   line-height: 30px;
   margin-bottom: 15px; }
@@ -247,7 +299,8 @@ nav {
 footer.page-footer {
   margin-top: 0px;
   padding-top: 0px;
-  background-color: #000; }
+  background-color: #000;
+  z-index: 1; }
 
 footer.page-footer .row {
   margin-bottom: 0px;

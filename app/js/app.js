@@ -64,5 +64,8 @@ $(function() {
     menuWidth: 300
   });
 
+  //init modal
+  $('.modal-trigger').leanModal();
+
 
 });

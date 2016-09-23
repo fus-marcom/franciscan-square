@@ -254,6 +254,87 @@ nav {
   }
 }
 
+// About Styles
+#about {
+
+  #directions {
+    padding: 0;
+    margin-bottom: -38px;
+    z-index: 0;
+
+    .row {
+      margin: 0;
+
+      .col {
+        padding: 0;
+      }
+
+      .directions-text-col {
+        padding: 50px;
+      }
+    }
+
+    i {
+      font-size: 39px;
+      vertical-align: text-top;
+      width: 39px;
+      height: 39px;
+    }
+  }
+
+  // Map Styles
+  #custom-map {
+    height: 50vh;
+    width: 100%;
+
+
+    @media screen and (max-height: 550px) {
+      height: 85vh;
+      pointer-events: none;
+    }
+
+    @media screen and (max-width: 740px) {
+      pointer-events: none;
+    }
+  }
+
+  .gm-style-iw * {
+    display: block;
+    width: 100%;
+  }
+
+  .gm-style-iw h4, .gm-style-iw p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .gm-style-iw a {
+    color: #4272db;
+  }
+
+  .marker-name {
+    font-size: 20px;
+  }
+
+  .gm-style-iw {
+    width: 300px;
+    //min-height: 150px;
+    max-width: 210px;
+
+    span {
+      font-weight: 400;
+    }
+
+    .marker-name {
+      font-weight: 300;
+    }
+  }
+
+  iframe {
+    min-height: 50vh;
+  }
+}
+
 .card {
   .card-content {
     .card-title {
@@ -377,6 +458,7 @@ footer.page-footer {
   margin-top: 0px;
   padding-top: 0px;
   background-color: #000;
+  z-index: 1;
  }
   footer.page-footer .row {
     margin-bottom: 0px;
