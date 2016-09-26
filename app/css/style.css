@@ -17,6 +17,15 @@
   display: block;
   margin: 0 auto; }
 
+.container {
+  max-width: 2000px; }
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 85%; } }
+
+.input-field label {
+  left: 0; }
+
 body {
   background-color: #fff;
   display: flex;
@@ -166,14 +175,14 @@ nav {
   font-weight: 300;
   padding: 15px 0 50px 0; }
 
-#hotel .container {
-  max-width: 2000px; }
-  @media only screen and (min-width: 993px) {
-    #hotel .container {
-      width: 85%; } }
-
-#hotel ul li {
+ul li {
   font-size: 16px; }
+
+#about .section ul {
+  padding: 8px; }
+  #about .section ul li {
+    list-style-type: square;
+    margin-bottom: 8px; }
 
 #about #directions {
   padding: 0;
@@ -190,12 +199,6 @@ nav {
     vertical-align: text-top;
     width: 39px;
     height: 39px; }
-
-#about ul {
-  padding: 8px; }
-  #about ul li {
-    list-style-type: square;
-    margin-bottom: 8px; }
 
 #about #custom-map {
   height: 50vh;
@@ -305,8 +308,19 @@ nav {
 footer.page-footer {
   margin-top: 0px;
   padding-top: 0px;
-  background-color: #000;
+  background-color: #21412a;
   z-index: 1; }
+  footer.page-footer .container .col {
+    margin-top: 16px;
+    padding: 0 24px; }
+
+.social a {
+  padding-right: 8px; }
+  .social a i {
+    font-size: 24px; }
+
+.input-field {
+  max-width: 300px; }
 
 footer.page-footer .row {
   margin-bottom: 0px;
@@ -322,5 +336,12 @@ footer {
     margin-bottom: 0px;
     margin-top: 10px; }
 
-.footer-copyright a {
-  margin-right: 10px; }
+.footer-copyright {
+  background-color: #1e3a26 !important; }
+  .footer-copyright a {
+    margin-right: 10px; }
+
+.blue-footer {
+  background-color: #1f2a44 !important; }
+  .blue-footer .footer-copyright {
+    background-color: #1c263d !important; }

@@ -27,6 +27,20 @@ $fus-gold: #998643;
   margin: 0 auto;
 }
 
+.container {
+  max-width: 2000px;
+
+  @media only screen and (min-width: 993px) {
+    width: 85%;
+  }
+}
+
+.input-field {
+  label {
+    left: 0;
+  }
+}
+
 body {
   background-color: #fff;
    display: flex;
@@ -240,22 +254,26 @@ nav {
     font-weight: 300;
     padding: 15px 0 50px 0;
   }
-
-  .container {
-    max-width: 2000px;
-
-    @media only screen and (min-width: 993px) {
-      width: 85%;
-    }
-  }
+}
 
   ul li {
     font-size: 16px;
   }
-}
+
 
 // About Styles
 #about {
+
+  .section {
+    ul {
+      padding: 8px;
+
+      li {
+        list-style-type: square;
+        margin-bottom: 8px;
+      }
+    }
+  }
 
   #directions {
     padding: 0;
@@ -279,15 +297,6 @@ nav {
       vertical-align: text-top;
       width: 39px;
       height: 39px;
-    }
-  }
-
-  ul {
-    padding: 8px;
-
-    li {
-      list-style-type: square;
-      margin-bottom: 8px;
     }
   }
 
@@ -466,8 +475,28 @@ nav {
 footer.page-footer {
   margin-top: 0px;
   padding-top: 0px;
-  background-color: #000;
+  background-color: $fus-green;
   z-index: 1;
+
+  .container {
+    .col {
+      margin-top: 16px;
+      padding: 0 24px;
+    }
+  }
+ }
+
+ .social {
+   a {
+     padding-right: 8px;
+     i {
+       font-size: 24px;
+     }
+   }
+ }
+
+ .input-field {
+   max-width: 300px;
  }
   footer.page-footer .row {
     margin-bottom: 0px;
@@ -486,7 +515,16 @@ footer {
 }
 
 .footer-copyright {
+  background-color: darken($fus-green, 2%) !important;
   a {
     margin-right: 10px;
+  }
+}
+
+.blue-footer {
+  background-color: $fus-dark-blue !important;
+
+  .footer-copyright {
+    background-color: darken($fus-dark-blue, 2%) !important;
   }
 }
