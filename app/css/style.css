@@ -191,6 +191,12 @@ nav {
     width: 39px;
     height: 39px; }
 
+#about ul {
+  padding: 8px; }
+  #about ul li {
+    list-style-type: square;
+    margin-bottom: 8px; }
+
 #about #custom-map {
   height: 50vh;
   width: 100%; }

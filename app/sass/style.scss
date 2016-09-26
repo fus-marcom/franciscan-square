@@ -282,6 +282,15 @@ nav {
     }
   }
 
+  ul {
+    padding: 8px;
+
+    li {
+      list-style-type: square;
+      margin-bottom: 8px;
+    }
+  }
+
   // Map Styles
   #custom-map {
     height: 50vh;
