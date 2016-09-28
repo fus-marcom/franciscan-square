@@ -181,11 +181,10 @@ nav {
   .section .col.valign {
     padding: 0 50px; }
   .section .btn {
-    background-color: #fff;
-    color: #000;
-    border: solid 1px #000; }
+    background-color: #21412a;
+    color: #fff; }
     .section .btn:hover {
-      background-color: #000;
+      background-color: #264b31;
       color: #fff; }
 
 .section.banner {

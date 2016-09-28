@@ -262,12 +262,11 @@ nav {
   }
 
   .btn {
-    background-color: #fff;
-    color: #000;
-    border: solid 1px #000;
+    background-color: $fus-green;
+    color: #fff;
 
     &:hover {
-      background-color: #000;
+      background-color: lighten($fus-green, 3%);
       color: #fff;
     }
   }
