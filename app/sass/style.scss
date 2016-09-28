@@ -62,6 +62,16 @@ $fus-gold: #998643;
   height: 16px;
 }
 
+.valign-wrapper {
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+
+    .col {
+      margin-bottom: 16px;
+    }
+  }
+}
+
 .container {
   max-width: 2000px;
 
@@ -292,7 +302,7 @@ nav {
     height: calc(60vh - 64px);
   }
 
-  h5 {
+  h5:not(footer h5) {
     font-weight: 300;
     padding: 15px 0 50px 0;
   }
