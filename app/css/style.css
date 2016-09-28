@@ -30,6 +30,18 @@
   display: block;
   margin: 0 auto; }
 
+.list-styled {
+  padding: 16px; }
+  .list-styled li {
+    list-style-type: square;
+    margin-bottom: 8px; }
+
+.li-divider {
+  border-top: 1px solid;
+  width: 28px;
+  margin: 0 auto;
+  height: 16px; }
+
 .container {
   max-width: 2000px; }
   @media only screen and (min-width: 993px) {
@@ -194,12 +206,6 @@ nav {
 
 ul li {
   font-size: 16px; }
-
-#about .section ul {
-  padding: 8px; }
-  #about .section ul li {
-    list-style-type: square;
-    margin-bottom: 8px; }
 
 #about #directions {
   padding: 0;

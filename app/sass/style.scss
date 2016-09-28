@@ -46,6 +46,22 @@ $fus-gold: #998643;
   margin: 0 auto;
 }
 
+.list-styled {
+  padding: 16px;
+
+  li {
+    list-style-type: square;
+    margin-bottom: 8px;
+  }
+}
+
+.li-divider {
+  border-top: 1px solid;
+  width: 28px;
+  margin: 0 auto;
+  height: 16px;
+}
+
 .container {
   max-width: 2000px;
 
@@ -289,17 +305,6 @@ nav {
 
 // About Styles
 #about {
-
-  .section {
-    ul {
-      padding: 8px;
-
-      li {
-        list-style-type: square;
-        margin-bottom: 8px;
-      }
-    }
-  }
 
   #directions {
     padding: 0;
