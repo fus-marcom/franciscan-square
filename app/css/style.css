@@ -111,7 +111,8 @@ nav {
   position: fixed;
   bottom: 0;
   margin-left: 8px;
-  width: 75px; }
+  width: 75px;
+  z-index: 2; }
   .scroll-to-top i {
     color: #fff;
     font-size: 48px;
@@ -182,7 +183,7 @@ nav {
       color: #1f2a44; }
 
 #home .hero-section {
-  height: 90vh; }
+  height: 87vh; }
 
 #hotel .hero-section {
   height: calc(60vh - 64px); }

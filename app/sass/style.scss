@@ -172,6 +172,7 @@ nav {
   bottom: 0;
   margin-left: 8px;
   width: 75px;
+  z-index: 2;
 
   i {
     color: #fff;
@@ -265,7 +266,7 @@ nav {
 
 #home {
   .hero-section {
-    height: 90vh;
+    height: 87vh;
   }
 }
 
