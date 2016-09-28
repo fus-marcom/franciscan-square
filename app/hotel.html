@@ -10,9 +10,10 @@
   <body id="hotel">
     <nav class="white black-text">
       <div class="nav-wrapper">
-       <a href="#!" class="brand-logo"><img src="img/FrSqLogoH.jpg" /></a>
+       <a href="/" class="brand-logo hide-on-med-and-up"><img src="img/FrSqLogoH.jpg" /></a>
        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
        <ul class="right hide-on-med-and-down black-text">
+         <li><a href="#" class="btn nav-cta">Book</a></li>
          <li><a href="hotel.html">Hotel</a></li>
          <li><a href="dining.html">Dining</a></li>
          <li><a href="events.html">Events</a></li>
@@ -28,12 +29,20 @@
        </ul>
      </div>
     </nav>
+    <a href="/" class="center-logo hide-on-small-only"><img src="img/FrSqLogoH.jpg" /></a>
     <main>
       <div class="hero-section">
         <div class="hero-overlay "></div>
           <h1 class="center thin">The Inn at Franciscan Square</h1>
       </div>
-      <div class="section" id="inn">
+      <div class="section sub-menu">
+        <ul class="table-of-contents">
+          <li><a class="slow-nav" href="#suites">Suites</a></li>
+          <li><a class="slow-nav" href="#rooms">Rooms</a></li>
+          <li><a class="slow-nav" href="#amenities">Amenities</a></li>
+        </ul>
+      </div>
+      <div class="section scrollspy" id="suites">
         <div class="container">
           <h2 class="center thin">Suites</h2>
           <div class="row">
@@ -52,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="section" id="inn">
+      <div class="section scrollspy" id="rooms">
         <div class="container">
           <h2 class="center thin">Rooms</h2>
           <div class="row">
@@ -71,10 +80,10 @@
           </div>
         </div>
       </div>
-      <div class="section banner fus-dark-blue white-text valign-wrapper" id="book-online">
+      <div class="section scrollspy banner fus-dark-blue white-text valign-wrapper" id="book-online">
           <a class="block-center"><buton class="btn btn-large valign">Book Online</buton></a>
       </div>
-      <div class="section" id="amenities">
+      <div class="section scrollspy" id="amenities">
         <div class="container">
           <h2 class="center thin">Amenities</h2>
           <div class="row">
@@ -164,7 +173,7 @@
             <address>
               <p class="white-text" translate="no" typeof="schema:PostalAddress">
                 <span property="schema:name">Franciscan Square</span><br>
-                <span property="schema:streetAddress">1234 University Blvd</span><br>
+                <span property="schema:streetAddress">200 Franciscan Square</span><br>
                 <span property="schema:addressLocality">Steubenville</span>, <abbr title="Ohio" property="schema:addressRegion">OH</abbr> <span property="schema:postalCode">43952</span> <abbr property="schema:addressCountry">USA</abbr><br />
                 <a href="tel:5555555555" property="telephone" class="white-text">555.555.5555</a><br />
                 <a href="mailto:example@franciscansquare.com" property="email" class="white-text">

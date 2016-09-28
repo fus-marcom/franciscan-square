@@ -22,6 +22,25 @@ $fus-gold: #998643;
 }
 
 // Helper Classes
+.center-logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: -53px;
+  z-index: 2;
+
+  img {
+    width: 280px;
+  }
+}
+
+.nav-cta {
+  background-color: $fus-dark-blue;
+
+  &:hover {
+    background-color: lighten($fus-dark-blue, 10%);
+  }
+}
+
 .block-center {
   display: block;
   margin: 0 auto;
@@ -244,6 +263,12 @@ nav {
   }
 }
 
+#home {
+  .hero-section {
+    height: 90vh;
+  }
+}
+
 // Hotel Page Styles
 #hotel {
   .hero-section {
@@ -373,11 +398,14 @@ nav {
 
   ul {
     display: inline-block;
+    padding: 0 !important;
 
     li {
       font-size: 18px;
       float: left;
       padding: 8px;
+      list-style-type: none !important;
+      margin: 0 !important;
     }
   }
 }

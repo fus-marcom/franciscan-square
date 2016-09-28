@@ -13,6 +13,19 @@
 .fus-gold {
   background-color: #998643; }
 
+.center-logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: -53px;
+  z-index: 2; }
+  .center-logo img {
+    width: 280px; }
+
+.nav-cta {
+  background-color: #1f2a44; }
+  .nav-cta:hover {
+    background-color: #2f4067; }
+
 .block-center {
   display: block;
   margin: 0 auto; }
@@ -168,6 +181,9 @@ nav {
       background-color: #fff;
       color: #1f2a44; }
 
+#home .hero-section {
+  height: 90vh; }
+
 #hotel .hero-section {
   height: calc(60vh - 64px); }
 
@@ -248,11 +264,14 @@ ul li {
   width: 100%;
   background-color: rgba(33, 65, 42, 0.68); }
   .sub-menu ul {
-    display: inline-block; }
+    display: inline-block;
+    padding: 0 !important; }
     .sub-menu ul li {
       font-size: 18px;
       float: left;
-      padding: 8px; }
+      padding: 8px;
+      list-style-type: none !important;
+      margin: 0 !important; }
 
 .table-of-contents a {
   display: inline-block;
