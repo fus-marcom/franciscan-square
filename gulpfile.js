@@ -9,6 +9,7 @@ var minifyCss = require('gulp-minify-css');
 var inject = require('gulp-inject'); //Start by adding the plugin to your gulpfile
 var htmlmin = require('gulp-htmlmin');
 var babel = require("gulp-babel");
+var UglifyJS = require("uglify-js");
 
 gulp.task('dist', function() {
    gulp.src('app/index.html')
@@ -21,7 +22,7 @@ gulp.task('dist', function() {
         .pipe(usemin({
             assetsDir: 'app',
             css: [minifyCss(), 'concat'],
-            js: [babel(), uglify(), 'concat'],
+            js: [babel(), 'concat'],
             html: [ htmlmin({
               collapseBooleanAttributes: true,
               collapseWhitespace: true,
