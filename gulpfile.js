@@ -10,16 +10,17 @@ var inject = require('gulp-inject'); //Start by adding the plugin to your gulpfi
 var htmlmin = require('gulp-htmlmin');
 var babel = require("gulp-babel");
 var UglifyJS = require("uglify-js");
+var useref = require('gulp-useref');
 
 gulp.task('dist', function() {
-   gulp.src('app/index.html')
+   gulp.src('app/*.html')
      .pipe(inject(gulp.src(['app/js/analytics.js']), { // This is the file that has the content that will be injected into index.html
        starttag: '<!-- inject:analytics -->', // Here we tell the location in which we want the injection to occur
        transform: function (filePath, file) {
          return file.contents.toString('utf8'); // Return file contents as string
          }
      }))
-        .pipe(usemin({
+        .pipe(useref({
             assetsDir: 'app',
             css: [minifyCss(), 'concat'],
             js: [babel(), 'concat'],
