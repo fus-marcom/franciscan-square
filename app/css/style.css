@@ -14,12 +14,12 @@
   background-color: #998643; }
 
 .center-logo {
-  display: block;
-  margin: 0 auto;
   margin-top: -53px;
   z-index: 2; }
   .center-logo img {
-    width: 280px; }
+    width: 280px;
+    display: block;
+    margin: 0 auto; }
 
 .nav-cta {
   background-color: #1f2a44; }

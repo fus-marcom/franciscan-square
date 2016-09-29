@@ -23,13 +23,13 @@ $fus-gold: #998643;
 
 // Helper Classes
 .center-logo {
-  display: block;
-  margin: 0 auto;
   margin-top: -53px;
   z-index: 2;
 
   img {
     width: 280px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
