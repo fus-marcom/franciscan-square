@@ -4,6 +4,19 @@
 
 $(function() {
 
+  //Check for ios Safari5
+  let userAgent = window.navigator.userAgent.toLowerCase(),
+    safari = /safari/.test( userAgent ),
+    ios = /iphone|ipod|ipad/.test( userAgent );
+
+  if( ios ) {
+      if ( safari ) {
+          $('body').addClass('ios');
+      } else if ( !safari ) {
+          //webview
+      }
+  }
+
   //Get current year and add to footer
   let dateToday = new Date();
   let currentYear = dateToday.getFullYear();

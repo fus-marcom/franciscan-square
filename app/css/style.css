@@ -48,11 +48,23 @@
     .valign-wrapper .col {
       margin-bottom: 16px; } }
 
+@media screen and (max-width: 600px) {
+  .valign-wrapper.banner {
+    flex-direction: row; } }
+
 .container {
   max-width: 2000px; }
   @media only screen and (min-width: 993px) {
     .container {
       width: 85%; } }
+
+@media screen and (max-width: 600px) {
+  .order-1 {
+    order: 1; } }
+
+@media screen and (max-width: 600px) {
+  .order-2 {
+    order: 2; } }
 
 .input-field label {
   left: 0; }
@@ -174,6 +186,12 @@ nav {
   .hero-section h1 {
     background-color: rgba(255, 255, 255, 0.75);
     padding: 50px 0; }
+    @media screen and (max-width: 600px) {
+      .hero-section h1 {
+        font-size: 28px;
+        position: absolute;
+        top: calc(50vh - 30px);
+        width: 100%; } }
 
 .section {
   min-height: 50vh;
@@ -201,9 +219,6 @@ nav {
 
 #home .hero-section {
   height: 87vh; }
-
-#hotel .hero-section {
-  height: calc(60vh - 64px); }
 
 #hotel h5:not(footer h5) {
   font-weight: 300;
@@ -415,3 +430,8 @@ footer {
   background-color: #1f2a44 !important; }
   .blue-footer .footer-copyright {
     background-color: #1c263d !important; }
+
+.ios .hero-section {
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover; }

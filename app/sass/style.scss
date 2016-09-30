@@ -73,11 +73,29 @@ $fus-gold: #998643;
   }
 }
 
+.valign-wrapper.banner {
+  @media screen and (max-width: 600px) {
+    flex-direction: row;
+  }
+}
+
 .container {
   max-width: 2000px;
 
   @media only screen and (min-width: 993px) {
     width: 85%;
+  }
+}
+
+.order-1 {
+  @media screen and (max-width: 600px) {
+    order: 1;
+  }
+}
+
+.order-2 {
+  @media screen and (max-width: 600px) {
+    order: 2;
   }
 }
 
@@ -251,6 +269,13 @@ nav {
   h1 {
     background-color: rgba(255, 255, 255, 0.75);
     padding: 50px 0;
+
+    @media screen and (max-width: 600px) {
+      font-size: 28px;
+      position: absolute;
+      top: calc(50vh - 30px);
+      width: 100%;
+    }
   }
 }
 
@@ -298,9 +323,6 @@ nav {
 
 // Hotel Page Styles
 #hotel {
-  .hero-section {
-    height: calc(60vh - 64px);
-  }
 
   h5:not(footer h5) {
     font-weight: 300;
@@ -624,5 +646,15 @@ footer {
 
   .footer-copyright {
     background-color: darken($fus-dark-blue, 2%) !important;
+  }
+}
+
+
+// iOS only styles
+.ios {
+  .hero-section {
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
   }
 }
