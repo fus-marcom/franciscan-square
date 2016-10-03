@@ -110,13 +110,13 @@ $('.sub-menu').addClass('original').clone().insertAfter('.sub-menu').addClass('c
 inPageNav();
 
 
-scrollIntervalID = setInterval(stickIt, 10);
+let scrollIntervalID = setInterval(stickIt, 10);
 
 
 function stickIt() {
 
-  var orgElementPos = $('.original').offset();
-  orgElementTop = orgElementPos.top;
+  let orgElementPos = $('.original').offset();
+  let orgElementTop = orgElementPos.top;
 
   if ($(window).scrollTop() >= (orgElementTop)) {
     // scrolled past the original position; now only show the cloned, sticky element.
