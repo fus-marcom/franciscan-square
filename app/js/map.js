@@ -184,12 +184,12 @@ function init() {
     ];
 
     for (var i = 0; i < locations.length; i++) {
-      if (locations[i][1] =='undefined'){ let addressLine1 ='';} else { addressLine1 = locations[i][1];}
-      if (locations[i][2] =='undefined'){ let addressLine2 ='';} else { addressLine2 = locations[i][2];}
-      if (locations[i][3] =='undefined'){ let telephone ='';} else { telephone = locations[i][3];}
-      if (locations[i][4] =='undefined'){ let email ='';} else { email = locations[i][4];}
-      if (locations[i][5] =='undefined'){ let fax ='';} else { fax = locations[i][5];}
-      if (locations[i][8] =='undefined'){ let markericon ='';} else { markericon = locations[i][8];}
+      if (locations[i][1] =='undefined'){ let addressLine1 ='';} else { let addressLine1 = locations[i][1];}
+      if (locations[i][2] =='undefined'){ let addressLine2 ='';} else { let addressLine2 = locations[i][2];}
+      if (locations[i][3] =='undefined'){ let telephone ='';} else { let telephone = locations[i][3];}
+      if (locations[i][4] =='undefined'){ let email ='';} else { let email = locations[i][4];}
+      if (locations[i][5] =='undefined'){ let fax ='';} else { let fax = locations[i][5];}
+      if (locations[i][8] =='undefined'){ let markericon ='';} else { let markericon = locations[i][8];}
         marker = new google.maps.Marker({
             icon: markericon,
             position: new google.maps.LatLng(locations[i][6], locations[i][7]),
