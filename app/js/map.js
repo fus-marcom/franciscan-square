@@ -203,7 +203,7 @@ function init() {
             fax: fax
         });
 
-        infoWidowTemplate = `
+        infoWindowTemplate = `
           <div class="info-container">
             <span class="marker-name">${marker.title}</div>
             <span class="marker-address">${marker.add1}</div>
@@ -215,7 +215,7 @@ function init() {
         `;
 
         infowindow = new google.maps.InfoWindow({
-          content: infoWidowTemplate
+          content: infoWindowTemplate
         });
 // TODO max the corresponding card with location info pop out on hover match up a field with the card class
         // google.maps.event.addListener(marker, 'mouseover', function() {
@@ -228,19 +228,19 @@ function init() {
         //   infowindow.close(map, this);
         // });
 
-        google.maps.event.addListener(marker,'click', (function(marker,infoWidowTemplate,infowindow){
+        google.maps.event.addListener(marker,'click', (function(marker,infoWindowTemplate,infowindow){
     return function() {
-        infowindow.setContent(infoWidowTemplate);
+        infowindow.setContent(infoWindowTemplate);
         infowindow.open(map,marker);
     };
-    })(marker,infoWidowTemplate,infowindow));
+    })(marker,infoWindowTemplate,infowindow));
 
-//     google.maps.event.addListener(marker,'mouseout', (function(marker,infoWidowTemplate,infowindow){
+//     google.maps.event.addListener(marker,'mouseout', (function(marker,infoWindowTemplate,infowindow){
 // return function() {
 //     infowindow.close(map,marker);
 //   };
 
-//})(marker,infoWidowTemplate,infowindow));
+//})(marker,infoWindowTemplate,infowindow));
 
 
 link = '';     }
