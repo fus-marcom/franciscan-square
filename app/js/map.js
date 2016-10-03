@@ -182,7 +182,7 @@ function init() {
     var locations = [
       ['Franciscan Square', 'University Blvd', 'Steubenville, OH', 'P: ', 'example@franciscansquare.com', 'F: ', 40.373540, -80.621864, 'img/map-marker.svg'],
     ];
-    let addressLine1, addressLine2, telephone, email, fax, markericon;
+    let addressLine1, addressLine2, telephone, email, fax, markericon, marker;
 
     for (var i = 0; i < locations.length; i++) {
       if (locations[i][1] =='undefined'){ addressLine1 ='';} else { addressLine1 = locations[i][1];}
