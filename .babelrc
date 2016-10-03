@@ -1,0 +1,7 @@
+{
+  "presets": ["es2015", "stage-3"],
+  "ignore": [
+    "analytics.js",
+    "imagesLoaded.min.js"
+  ]
+}

@@ -11,38 +11,39 @@ var htmlmin = require('gulp-htmlmin');
 var babel = require("gulp-babel");
 var UglifyJS = require("uglify-js");
 var useref = require('gulp-useref');
+var gulpif = require('gulp-if');
 
 gulp.task('dist', function() {
    gulp.src('app/*.html')
-     .pipe(inject(gulp.src(['app/js/analytics.js']), { // This is the file that has the content that will be injected into index.html
+     .pipe(inject(gulp.src(['app/analytics.html']), { // This is the file that has the content that will be injected into index.html
        starttag: '<!-- inject:analytics -->', // Here we tell the location in which we want the injection to occur
        transform: function (filePath, file) {
          return file.contents.toString('utf8'); // Return file contents as string
          }
      }))
-        .pipe(useref({
-            assetsDir: 'app',
-            css: [minifyCss(), 'concat'],
-            js: [babel(), 'concat'],
-            html: [ htmlmin({
-              collapseBooleanAttributes: true,
-              collapseWhitespace: true,
-              decodeEntities: true,
-              minifyCSS: true,
-              minifyJS: true,
-              processConditionalComments: true,
-              removeAttributeQuotes: true,
-              removeComments: true,
-              removeEmptyAttributes: true,
-              removeOptionalTags: true,
-              removeRedundantAttributes: true,
-              removeScriptTypeAttributes: true,
-              removeStyleLinkTypeAttributes: true,
-              removeTagWhitespace: true,
-              sortAttributes: true,
-              sortClassName: true,
-              useShortDoctype: true
-             }) ]
+         .pipe(usemin({
+        assetsDir: 'app',
+        css: [minifyCss(), 'concat'],
+        js: [babel(), uglify(), 'concat'],
+        html: [ htmlmin({
+          collapseBooleanAttributes: true,
+          collapseWhitespace: true,
+          decodeEntities: true,
+          minifyCSS: true,
+          minifyJS: true,
+          processConditionalComments: true,
+          removeAttributeQuotes: true,
+          removeComments: true,
+          removeEmptyAttributes: true,
+          removeOptionalTags: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          removeTagWhitespace: true,
+          sortAttributes: true,
+          sortClassName: true,
+          useShortDoctype: true
+         }) ]
         }))
       .pipe(gulp.dest('dist')); // This is the destination of the final product
 });
