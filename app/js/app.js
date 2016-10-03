@@ -122,9 +122,9 @@ function stickIt() {
     // scrolled past the original position; now only show the cloned, sticky element.
 
     // Cloned element should always have same left position and width as original element.
-    orgElement = $('.original');
-    coordsOrgElement = orgElement.offset();
-    leftOrgElement = coordsOrgElement.left;
+    let orgElement = $('.original'),
+    coordsOrgElement = orgElement.offset(),
+    leftOrgElement = coordsOrgElement.left,
     widthOrgElement = orgElement.css('width');
     $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
     $('.original').css('visibility','hidden');
