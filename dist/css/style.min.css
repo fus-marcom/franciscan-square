@@ -6668,5 +6668,11 @@ footer {
 
 .ios .hero-section {
   background-attachment: scroll;
-  background-position: center;
+  background-position: bottom;
   background-size: cover; }
+
+@media screen and (max-width: 500px) {
+  .hero-section {
+    background-attachment: scroll;
+    background-position: bottom;
+    background-size: cover; } }
