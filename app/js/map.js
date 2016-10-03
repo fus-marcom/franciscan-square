@@ -200,7 +200,9 @@ function init() {
             add2: addressLine2,
             tel: telephone,
             email: email,
-            fax: fax
+            fax: fax,
+            optimized: false,
+            scaledSize: new google.maps.Size(25, 25)
         });
 
         infoWindowTemplate = `
