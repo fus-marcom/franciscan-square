@@ -252,7 +252,7 @@ nav {
 }
 
 .hero-section {
-  background-image: url("../img/town-square.jpg");
+  background-image: url("../img/hotel-exterior.jpg");
   background-size: cover;
   background-attachment: fixed;
   height:calc(90vh - 64px);
@@ -265,6 +265,7 @@ nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
     height: 39%;
   }
+
 
   h1 {
     background-color: rgba(255, 255, 255, 0.75);
@@ -317,12 +318,16 @@ nav {
 
 #home {
   .hero-section {
+    background-position: center;
     height: 87vh;
   }
 }
 
 // Hotel Page Styles
 #hotel {
+  .hero-section {
+    background-image: url("../img/hotel-ent.jpg");
+  }
 
   h5:not(footer h5) {
     font-weight: 300;

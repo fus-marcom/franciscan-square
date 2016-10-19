@@ -168,7 +168,7 @@ nav {
   color: rgba(0, 0, 0, 0.5); }
 
 .hero-section {
-  background-image: url("../img/town-square.jpg");
+  background-image: url("../img/hotel-exterior.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: calc(90vh - 64px); }
@@ -218,7 +218,11 @@ nav {
       color: #1f2a44; }
 
 #home .hero-section {
+  background-position: center;
   height: 87vh; }
+
+#hotel .hero-section {
+  background-image: url("../img/hotel-ent.jpg"); }
 
 #hotel h5:not(footer h5) {
   font-weight: 300;
