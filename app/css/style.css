@@ -110,7 +110,8 @@ nav {
     cursor: pointer;
     margin-right: 8px; }
   nav ul li a {
-    color: rgba(0, 0, 0, 0.87); }
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 18px; }
   nav ul li a.logout:hover {
     background-color: transparent; }
   nav .dropdown-content li:hover {
@@ -126,16 +127,13 @@ nav {
   .side-nav .logo img {
     width: 100%; }
 
-.side-nav li {
-  line-height: 48px; }
-  .side-nav li a {
+.side-nav li a {
+  font-size: 18px; }
+  .side-nav li a i {
     height: 48px;
-    line-height: 48px; }
-    .side-nav li a i {
-      height: 48px;
-      line-height: 48px;
-      float: left;
-      margin-right: 8px; }
+    line-height: 48px;
+    float: left;
+    margin-right: 8px; }
 
 .scroll-to-top {
   position: fixed;
@@ -165,7 +163,7 @@ nav {
   display: block; }
 
 .flow-text {
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.76); }
 
 .hero-section {
   background-image: url("../img/hotel-exterior.jpg");
@@ -194,8 +192,7 @@ nav {
         width: 100%; } }
 
 .section {
-  min-height: 50vh;
-  padding: 50px 0; }
+  padding: 50px 0 0 0; }
   .section .col.valign {
     padding: 0 50px; }
   .section .btn {

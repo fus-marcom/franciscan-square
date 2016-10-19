@@ -180,7 +180,7 @@ function init() {
     map = new google.maps.Map(mapElement, mapOptions);
     var infowindow, thisMarker, infoWindowTemplate;
     var locations = [
-      ['Franciscan Square', 'University Blvd', 'Steubenville, OH', 'P: ', 'example@franciscansquare.com', 'F: ', 40.373540, -80.621864, 'img/map-marker.svg'],
+      ['Franciscan Square', '200 Franciscan Square', 'Steubenville, OH', ' ', '', ' ', 40.373540, -80.621864, 'img/map-marker.svg'],
     ];
     let addressLine1, addressLine2, telephone, email, fax, markericon, marker, link;
 
