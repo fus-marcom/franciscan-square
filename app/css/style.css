@@ -419,6 +419,7 @@ footer.page-footer .row {
   margin-right: 10px; }
 
 footer {
+  border-top: 5px solid #998643;
   margin-top: 0px;
   padding-top: 0px; }
   footer .row {
