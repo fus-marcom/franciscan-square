@@ -24,7 +24,7 @@ gulp.task('dist', function() {
          .pipe(usemin({
         assetsDir: 'app',
         css: [minifyCss(), 'concat'],
-        js: [babel(), 'concat'],
+        js: [babel(), uglify(), 'concat'],
         html: [ htmlmin({
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
