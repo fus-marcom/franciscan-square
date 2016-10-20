@@ -6,6 +6,158 @@
     <meta name="description" content="The official website for Franciscan Square">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <style>
+    .center-logo {
+      margin-top: -53px; }
+      .center-logo img {
+        width: 280px;
+        display: block;
+        margin: 0 auto;
+        z-index: 2; }
+
+    .nav-cta {
+      background-color: #1f2a44; }
+      .nav-cta:hover {
+        background-color: #2f4067; }
+
+    .block-center {
+      display: block;
+      margin: 0 auto; }
+
+    .list-styled {
+      padding: 16px; }
+      .list-styled li {
+        list-style-type: square;
+        margin-bottom: 8px; }
+
+    .li-divider {
+      border-top: 1px solid;
+      width: 28px;
+      margin: 0 auto;
+      height: 16px; }
+
+    @media screen and (max-width: 600px) {
+      .valign-wrapper {
+        flex-direction: column; }
+        .valign-wrapper .col {
+          margin-bottom: 16px; } }
+
+    @media screen and (max-width: 600px) {
+      .valign-wrapper.banner {
+        flex-direction: row; } }
+
+    .container {
+      max-width: 2000px; }
+      @media only screen and (min-width: 993px) {
+        .container {
+          width: 85%; } }
+
+    @media screen and (max-width: 600px) {
+      .order-1 {
+        order: 1; } }
+
+    @media screen and (max-width: 600px) {
+      .order-2 {
+        order: 2; } }
+
+    .input-field label {
+      left: 0; }
+
+    body {
+      background-color: #fff;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+
+    main {
+      flex: 1 0 auto;
+      min-height: 100vh; }
+
+    header {
+      height: 122px;
+      margin-bottom: -48px; }
+
+    nav {
+      height: 64px;
+      box-shadow: none; }
+      nav .brand-logo img {
+        height: 64px;
+        margin: 16px; }
+      nav .button-collapse i {
+        color: rgba(0, 0, 0, 0.87); }
+      nav .page-title {
+        line-height: 64px;
+        font-size: 40px;
+        font-weight: 300;
+        margin-left: 25px; }
+      nav .button-collapse {
+        margin-left: 16px; }
+      nav .grid-btn, nav .list-btn {
+        cursor: pointer;
+        margin-right: 8px; }
+        @media screen and (max-width: 600px) {
+          nav .grid-btn, nav .list-btn {
+            display: none !important; } }
+      nav .more-btn {
+        cursor: pointer;
+        margin-right: 8px; }
+      nav ul li a {
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 18px; }
+      nav ul li a.logout:hover {
+        background-color: transparent; }
+      nav .dropdown-content li:hover {
+        background-color: transparent; }
+
+    .side-nav .logo {
+      height: 128px; }
+      .side-nav .logo a {
+        padding: 16px 16px 0px 16px;
+        width: 100%; }
+        .side-nav .logo a:hover {
+          background-color: #fff; }
+      .side-nav .logo img {
+        width: 100%; }
+
+    .side-nav li a {
+      font-size: 18px; }
+      .side-nav li a i {
+        height: 48px;
+        line-height: 48px;
+        float: left;
+        margin-right: 8px; }
+        .hero-section {
+          background-image: url("../img/hotel-exterior.jpg");
+          background-size: cover;
+          background-attachment: fixed;
+          height: calc(90vh - 64px); }
+          .hero-section .hero-overlay {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+            background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+            /* IE6-9 */
+            height: 39%; }
+          .hero-section h1 {
+            background-color: rgba(255, 255, 255, 0.75);
+            padding: 50px 0; }
+            @media screen and (max-width: 600px) {
+              .hero-section h1 {
+                font-size: 28px;
+                position: absolute;
+                top: calc(50vh - 30px);
+                width: 100%; } }
+                #home .hero-section {
+                  background-position: center;
+                  height: 87vh; }
+
+    </style>
   </head>
   <body id="home">
     <nav class="white black-text">

@@ -12,10 +12,6 @@ plan.target('production', [
 
 // run commands on localhost
 plan.local(function(local) {
-  // run gulp dis
-  local.log('Run build');
-  local.exec('gulp dist');
-
   local.log('Copy files to remote hosts');
   var filesToCopy = local.exec('git ls-files dist/', {silent: true});
   // rsync files to all the destination's hosts
