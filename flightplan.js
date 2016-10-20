@@ -3,8 +3,8 @@ var plan = require('flightplan');
 // configuration
 plan.target('production', [
   {
-    host: 'franciscan.university',
-    username: 'jweigelfus',
+    host: 'franciscansquare.com',
+    username: 'jweigelfus29',
     port: 22,
     agent: process.env.SSH_AUTH_SOCK
   },
@@ -25,6 +25,6 @@ plan.local(function(local) {
 // run commands on remote hosts
 plan.remote(function(remote) {
   remote.log('Move folder to site root');
-  remote.exec('cp -fRu ~/www/dist/* ~/www/f2/');
+  remote.exec('cp -fRu ~/www/dist/* ~/www/');
   remote.exec('rm -rf ~/www/dist/*');
 });
