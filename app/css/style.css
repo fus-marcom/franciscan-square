@@ -190,6 +190,26 @@ nav {
         position: absolute;
         top: calc(50vh - 30px);
         width: 100%; } }
+  .hero-section .hero-banner {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 50px 0; }
+    @media screen and (max-width: 600px) {
+      .hero-section .hero-banner {
+        position: absolute;
+        top: calc(50vh - 30px);
+        width: 100%; } }
+    .hero-section .hero-banner h1 {
+      background-color: transparent;
+      padding: 0;
+      margin-top: 13px; }
+      @media screen and (max-width: 600px) {
+        .hero-section .hero-banner h1 {
+          font-size: 28px;
+          position: initial; } }
+    @media screen and (max-width: 600px) {
+      .hero-section .hero-banner h4 {
+        font-size: 22px;
+        position: initial; } }
 
 .section {
   padding: 50px 0 0 0; }

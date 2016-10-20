@@ -277,6 +277,37 @@ nav {
       width: 100%;
     }
   }
+
+  .hero-banner {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 50px 0;
+
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      top: calc(50vh - 30px);
+      width: 100%;
+    }
+
+    h1 {
+      background-color: transparent;
+      padding: 0;
+      margin-top: 13px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 28px;
+        position: initial;
+      }
+    }
+
+    h4 {
+
+      @media screen and (max-width: 600px) {
+        font-size: 22px;
+        position: initial;
+      }
+
+    }
+  }
 }
 
 .section {
