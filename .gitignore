@@ -49,3 +49,5 @@ jspm_packages
 .bower-cache
 .bower-registry
 .bower-tmp
+
+.DS_Store
