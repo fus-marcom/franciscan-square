@@ -2,18 +2,12 @@ var plan = require('flightplan');
 
 // configuration
 plan.target('production', [
-  // {
-  //   host: 'franciscansquare.com',
-  //   username: 'jweigelfus29',
-  //   port: 22,
-  //   agent: process.env.SSH_AUTH_SOCK
-  // },
   {
-  host: '45.55.81.34',
-  username: 'jesse',
-  port: 22,
-  agent: process.env.SSH_AUTH_SOCK
-  }
+    host: 'franciscansquare.com',
+    username: 'jweigelfus29',
+    port: 22,
+    agent: process.env.SSH_AUTH_SOCK
+  },
 ]);
 
 // run commands on localhost
@@ -29,4 +23,3 @@ plan.remote(function(remote) {
   remote.log('Move folder to site root');
   remote.exec('cp -fRu ~/www/dist/dist/* ~/www/');
 });
-//Test 1

@@ -25,7 +25,6 @@ $fus-gold: #998643;
 .center-logo {
   margin-top: -53px;
 
-
   img {
     width: 280px;
     display: block;
@@ -44,6 +43,10 @@ $fus-gold: #998643;
 
 .block-center {
   display: block;
+  margin: 0 auto;
+}
+
+img.responsive-img {
   margin: 0 auto;
 }
 

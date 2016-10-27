@@ -30,6 +30,9 @@
   display: block;
   margin: 0 auto; }
 
+img.responsive-img {
+  margin: 0 auto; }
+
 .list-styled {
   padding: 16px; }
   .list-styled li {
