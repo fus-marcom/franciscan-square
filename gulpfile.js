@@ -12,9 +12,12 @@ var babel = require("gulp-babel");
 var UglifyJS = require("uglify-js");
 var useref = require('gulp-useref');
 var gulpif = require('gulp-if');
+var foreach = require('gulp-foreach');
 
 gulp.task('dist', function() {
    gulp.src('app/*.html')
+   .pipe(foreach(function(stream, file) {
+     return stream
      .pipe(inject(gulp.src(['app/analytics.html']), { // This is the file that has the content that will be injected into index.html
        starttag: '<!-- inject:analytics -->', // Here we tell the location in which we want the injection to occur
        transform: function (filePath, file) {
@@ -46,6 +49,8 @@ gulp.task('dist', function() {
          }) ]
         }))
       .pipe(gulp.dest('dist')); // This is the destination of the final product
+   }));
+
 });
 
 gulp.task('sass', function(){
