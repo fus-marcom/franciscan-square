@@ -630,7 +630,7 @@ nav {
 }
 
 footer.page-footer {
-  margin-top: 0px;
+  margin-top: 50px;
   padding-top: 0px;
   background-color: $fus-green;
   z-index: 1;
@@ -641,6 +641,10 @@ footer.page-footer {
       padding: 0 24px;
     }
   }
+ }
+
+ #about footer.page-footer {
+   margin-top: 0px;
  }
 
  .social {
