@@ -422,6 +422,9 @@ footer.page-footer {
   footer.page-footer .container .col {
     margin-top: 16px;
     padding: 0 24px; }
+    @media screen and (max-width: 600px) {
+      footer.page-footer .container .col {
+        text-align: center; } }
 
 #about footer.page-footer {
   margin-top: 0px; }
