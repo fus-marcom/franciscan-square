@@ -170,6 +170,14 @@ nav {
   ul li a {
     color: rgba(0,0,0,0.87);
     font-size: 18px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 8px;
+    }
+  }
+
+  ul li a.btn {
+    margin-right: 0;
   }
 
   ul li a.logout:hover {
