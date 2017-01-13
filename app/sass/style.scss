@@ -267,6 +267,18 @@ nav {
   background-attachment: fixed;
   height:calc(90vh - 64px);
 
+  @media screen and (max-width: 1200px) {
+    background-image: url("../img/hotel-exterior-1200w.jpg");
+  }
+
+  @media screen and (max-width: 600px) {
+    background-image: url("../img/hotel-exterior-600w.jpg");
+  }
+
+  @media screen and (max-width: 500px) {
+    background-image: url("../img/hotel-exterior-550w.jpg");
+  }
+
   .hero-overlay {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
@@ -367,6 +379,19 @@ nav {
 #hotel {
   .hero-section {
     background-image: url("../img/hotel-ent.jpg");
+    background-position: center;
+
+    @media screen and (max-width: 1200px) {
+      background-image: url("../img/hotel-ent-1200w.jpg");
+    }
+
+    @media screen and (max-width: 600px) {
+      background-image: url("../img/hotel-ent-600w.jpg");
+    }
+
+    @media screen and (max-width: 500px) {
+      background-image: url("../img/hotel-ent-550w.jpg");
+    }
   }
 
   h5:not(footer h5) {
