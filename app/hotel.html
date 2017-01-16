@@ -130,10 +130,21 @@
         float: left;
         margin-right: 8px; }
         .hero-section {
-          background-image: url("../img/hotel-exterior.jpg");
+          background-image: url("../img/hotel-ent.jpg");
+          background-position: center;
           background-size: cover;
           background-attachment: fixed;
           height: calc(90vh - 64px); }
+
+          @media screen and (max-width: 1200px) {
+            #hotel .hero-section {
+              background-image: url("../img/hotel-ent-1200w.jpg"); } }
+          @media screen and (max-width: 600px) {
+            #hotel .hero-section {
+              background-image: url("../img/hotel-ent-600w.jpg"); } }
+          @media screen and (max-width: 500px) {
+            #hotel .hero-section {
+              background-image: url("../img/hotel-ent-550w.jpg"); } }
           .hero-section .hero-overlay {
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
             background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
@@ -154,9 +165,6 @@
                 position: absolute;
                 top: calc(50vh - 30px);
                 width: 100%; } }
-
-                #hotel .hero-section {
-                  background-image: url("../img/hotel-ent.jpg"); }
 
     </style>
   </head>
@@ -207,7 +215,7 @@
           <h2 class="center light">Suites</h2>
           <div class="row">
             <div class="col s12 m8 offset-m2">
-              <img class="responsive-img materialboxed" src="img/king-suite-1.jpg" />
+              <img class="responsive-img materialboxed" src="img/king-suite-1-300w.jpg" srcset="img/king-suite-1-300w.jpg 300w, img/king-suite-1-600w.jpg 600w, img/king-suite-1-800w.jpg 800w, img/king-suite-1.jpg 1200w" sizes="(min-width: 600px) 50vw, 100vw" alt="VIP Suite with king bed at the Inn at Franciscan Square." title="VIP Suite" />
               <h5 class="center">
                 VIP Suite
               </h5>
@@ -234,13 +242,13 @@
           <h2 class="center light">Rooms</h2>
           <div class="row">
             <div class="col s12 m6">
-              <img class="responsive-img materialboxed" src="img/king.jpg" />
+              <img class="responsive-img materialboxed" src="img/king-300w.jpg" srcset="img/king-300w.jpg 300w, img/king-600w.jpg 600w, img/king-800w.jpg 800w, img/king.jpg 1200w" sizes="(min-width: 600px) 50vw, 100vw" alt="Room with a king bed at the Inn at Franciscan Square" title="King Room" />
               <h5 class="center">
                 One King
               </h5>
             </div>
             <div class="col s12 m6">
-              <img class="responsive-img materialboxed" src="img/queen-double-suite.jpg" />
+              <img class="responsive-img materialboxed" src="img/queen-double-suite-300w.jpg" srcset="img/queen-double-suite-300w.jpg 300w, img/queen-double-suite-600w.jpg 600w, img/queen-double-suite-800w.jpg 800w, img/queen-double-suite.jpg 1200w" sizes="(min-width: 600px) 50vw, 100vw" alt="Hotel Room" title="Hotel" />
               <h5 class="center">
                 Two Queen
               </h5>
@@ -293,7 +301,7 @@
           </div> -->
           <div class="row">
             <div class="col s12 m8 offset-m2">
-              <img class="responsive-img materialboxed" src="img/fitness.jpg" />
+              <img class="responsive-img materialboxed" src="img/fitness-300w.jpg" srcset="img/fitness-300w.jpg 300w, img/fitness-600w.jpg 600w, img/fitness-800w.jpg 800w, img/fitness.jpg 1200w" sizes="(min-width: 600px) 50vw, 100vw" alt="The fitness center at the Inn at Franciscan Square." title="Fitness Center" />
               <h5 class="center">
                 Fitness Center
               </h5>
@@ -309,7 +317,7 @@
           </div> -->
           <div class="row">
             <div class="col s12 m8 offset-m2">
-              <img class="responsive-img materialboxed" src="img/meeting-room.jpg" />
+              <img class="responsive-img materialboxed" src="img/meeting-room-300w.jpg" srcset="img/meeting-room-300w.jpg 300w, img/meeting-room-600w.jpg 600w, img/meeting-room-800w.jpg 800w, img/meeting-room.jpg 1200w" sizes="(min-width: 600px) 50vw, 100vw" alt="Twelve person meeting room at the Inn at Franciscan Square" title="12 Person Meeting Room" />
               <h5 class="center">
                 8 and 12 Person Meeting Rooms
               </h5>

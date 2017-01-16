@@ -134,6 +134,16 @@
           background-size: cover;
           background-attachment: fixed;
           height: calc(90vh - 64px); }
+
+          @media screen and (max-width: 1200px) {
+            .hero-section {
+              background-image: url("../img/hotel-exterior-1200w.jpg"); } }
+          @media screen and (max-width: 600px) {
+            .hero-section {
+              background-image: url("../img/hotel-exterior-600w.jpg"); } }
+          @media screen and (max-width: 500px) {
+            .hero-section {
+              background-image: url("../img/hotel-exterior-550w.jpg"); } }
           .hero-section .hero-overlay {
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
             background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
@@ -252,7 +262,7 @@
       <div class="section scrollspy " id="golf">
         <div class="row valign-wrapper">
           <div class="col s12 m6 order-1">
-            <img class="responsive-img materialboxed" alt="Photo by: Edewaa Foster via unsplash https://unsplash.com/search/golf?photo=mqPSdQDWeM8" src="img/golf.jpg" />
+            <img class="responsive-img materialboxed" alt="People golfing. Photo by: Edewaa Foster via unsplash https://unsplash.com/search/golf?photo=mqPSdQDWeM8" src="img/golf-300w.jpg" srcset="img/golf-300w.jpg 300w, img/golf-600w.jpg 600w, img/golf-800w.jpg 800w, img/golf.jpg 1200w" sizes="(min-width: 600px) 50vw, 100vw" title="Golf" />
           </div>
           <div class="col s12 m6 valign order-2">
             <h4 class="light">Golf</h4>
@@ -293,7 +303,7 @@
             </p>
           </div>
           <div class="col s12 m6 order-1">
-            <img class="responsive-img materialboxed" alt="Photo by: Rikki Chan via unsplash https://unsplash.com/photos/_k31aFqnmTM" src="img/bike.jpg" />
+            <img class="responsive-img materialboxed" alt="Person biking. Photo by: Rikki Chan via unsplash https://unsplash.com/photos/_k31aFqnmTM" src="img/bike-300w.jpg" srcset="img/bike-300w.jpg 300w, img/bike-600w.jpg 600w, img/bike-800w.jpg 800w, img/bike.jpg 1200w" sizes="(min-width: 600px) 50vw, 100vw" title="Biking" />
           </div>
         </div>
       </div>
@@ -367,7 +377,7 @@
             <!-- <button class="waves-effect waves-light btn">Learn More</button> -->
           </div>
         </div>
-      </div>    
+      </div>
     </div>
       <div class="scroll-to-top">
         <i class="material-icons tooltipped" data-position="right" data-delay="50" data-tooltip="To Top">arrow_back</i>
